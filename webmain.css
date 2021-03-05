@@ -1,201 +1,216 @@
 @charset "UTF-8";
 
 /* Color */
-	:root{
-		--Blush:    rgba(227, 166, 161, 1); /*Blush*/
-		--Berry:    rgba(188, 95 , 106, 1); /*Berry*/
-		--Tiffany:  rgba(25 , 179, 177, 1); /*Tiffany Blue*/
-		--Teal:     rgba(3  , 75 , 97 , 1); /*Deep Teal*/
-		--B_shadow: rgba(155, 50 , 50 , 1);
-	}
+:root {
+  --Blush: rgba(227, 166, 161, 1); /*Blush*/
+  --Berry: rgba(188, 95, 106, 1); /*Berry*/
+  --Tiffany: rgba(25, 179, 177, 1); /*Tiffany Blue*/
+  --Teal: rgba(3, 75, 97, 1); /*Deep Teal*/
+  --B_shadow: rgba(155, 50, 50, 1);
+}
 
 /* Reset */
-	html,body,canvas{
-		margin:0;
-		border:0;
-		padding:0;
-		width: 100%;
-		height: 100%;
-	}
-	h1,h2,h3,h4,p{
-		margin: 0;
-	}
+html,
+body,
+canvas {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
 
 /* Header */
-	header, #menu, section{
-		transition: 1s ease 0s;
-	}
-	header{
-		transition-delay: 0.5s;
-		position: relative;
-		float: top;
-		left: 100%;
-		width: 100%;
-		height: auto;
-		background-color: var(--Teal);
-	}
-		header .logo{
-
-		}
-		header h3:before{
-			content: "";
-		}
+header,
+#menu,
+section {
+  transition: 1s ease 0s;
+}
+header {
+  transition-delay: 0.5s;
+  position: relative;
+  float: top;
+  left: 100%;
+  width: 100%;
+  height: auto;
+  background-color: var(--Teal);
+}
+header .logo {
+}
+header h3:before {
+  content: "";
+}
 
 /* nav */
-	nav{
-		background-color: var(--Teal);
-	}
-	#menu{
-		position: fixed;
-		transition-delay: 0s;
-		width: 50%;
-		height: 100%;
-		position: absolute;
-		left: -50%;
-		z-index: 10;
-	}
+nav {
+  background-color: var(--Teal);
+}
+#menu {
+  position: fixed;
+  transition-delay: 0s;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: -50%;
+  z-index: 10;
+}
 
 /* section */
 
-	section{
-		background-color: var(--Berry);
-	}
-		section .inner{
-			background-color: var(--Blush);
-			width: 80%;
-			height: 80%;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			margin: auto;
-		}
-		section .box{
-			border-width: 0px;
-			border-radius: 10px;
-			box-shadow: 2px 2px 4px 1px var(--B_shadow);
-		}
-		section .inner:hover{
-			color: var(--Blush);
-		 	background-color: var(--Berry);
-		}
-		section .inner:active{
-			color: var(--Blush);
-		 	background-color: var(--Berry);
-		}
-		#topic{
-			background-color: var(--Berry);
-			width: 100%;
-			height: auto;
-			position: relative;
-			float: top;
-			left: -100%;
-		}
-		#banner{
-			background-color: var(--Blush);
-			transition-delay: 0s;
-			width: 100%;
-			height: 30%;
-			position: relative;
-			float: top;
-			left: -100%;
-		}
-		
-		#post, #post2, #post3{
-			transition-delay: 1s;
-			width: 100%;
-			height: 25%;
-			position: relative;
-			float: top;
-			top: 70%;
-		}
-		#post2{
-			transition-delay: 1.33s;
-		}
-		#post3{
-			transition-delay: 1.66s;
-		}
+section {
+  background-color: var(--Berry);
+}
+section .inner {
+  background-color: var(--Blush);
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+section .box {
+  border-width: 0px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 1px var(--B_shadow);
+}
+section .inner:hover {
+  color: var(--Blush);
+  background-color: var(--Berry);
+}
+section .inner:active {
+  color: var(--Blush);
+  background-color: var(--Berry);
+}
+#topic {
+  background-color: var(--Berry);
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  left: -100%;
+  z-index: 5;
+}
+#banner {
+  background-color: var(--Blush);
+  transition-delay: 0s;
+  width: 100%;
+  height: 30%;
+  position: relative;
+  float: top;
+  left: -100%;
+}
+
+#post,
+#post2,
+#post3 {
+  transition-delay: 1s;
+  width: 100%;
+  height: 25%;
+  position: relative;
+  float: top;
+  top: 70%;
+}
+#post2 {
+  transition-delay: 1.33s;
+}
+#post3 {
+  transition-delay: 1.66s;
+}
 
 /* Footer */
-	footer{
-		position: fixed;
-		width: 100%;
-		height: 5%;
-		bottom: 0%; 
-	}
+footer {
+  position: fixed;
+  width: 100%;
+  height: 5%;
+  bottom: 0%;
+}
 
 /* Button */
-	button{
-		transition: 0.5s ease-in-out;
-		cursor: pointer;
-		outline: none;
-		font-size: 1em;
-		padding: 0.5em;
-		color: var(--Teal);
-	 	background-color: var(--Tiffany);
-		border-color: var(--Teal);
-		border-width: 0px;
-		border-radius: 10px;
-		box-shadow: 1px 1px 2px 0.5px  var(--Teal);
-	}
-	button:hover{
-		color: var(--Tiffany);
-	 	background-color: var(--Teal);
-	}
-	button:active{
-		color: var(--Tiffany);
-	 	background-color: var(--Teal);
-	}
+button {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  outline: none;
+  font-size: 1em;
+  padding: 0.5em;
+  color: var(--Teal);
+  background-color: var(--Tiffany);
+  border-color: var(--Teal);
+  border-width: 0px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 0.5px var(--Teal);
+}
+button:hover {
+  color: var(--Tiffany);
+  background-color: var(--Teal);
+}
+button:active {
+  color: var(--Tiffany);
+  background-color: var(--Teal);
+}
 
 /* List */
-	ul {
-		width:90%;
-		list-style: none;
-		display: inline-block;
-		margin: 0 0 1em 0;
-		padding: 0.2em;
-		color: var(--Teal);
-	}
-	ul li {
-		transition: 0.5s ease-in-out;
-		width:100%;
-		padding: 0.2em;
-	}
-	ul li:hover {
-		color: var(--Tiffany);
-	 	background-color: var(--Teal);
-	}
+ul {
+  width: 90%;
+  list-style: none;
+  display: inline-block;
+  margin: 0 0 1em 0;
+  padding: 0.2em;
+  color: var(--Teal);
+}
+ul li {
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  padding: 0.2em;
+}
+ul li:hover {
+  color: var(--Tiffany);
+  background-color: var(--Teal);
+}
 
 /* canvas */
-	#UI{
-		transition: top 1s ease, width 1s ease, height 1s ease;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
-	}
-	canvas{
-		position: fixed;
-		background-color: rgba(174, 90, 84, 0.5);
-	}
+#UI {
+  transition: top 1s ease, width 1s ease, height 1s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+canvas {
+  position: fixed;
+  background-color: rgba(174, 90, 84, 0.5);
+}
 
 /* avg */
-	.avg3{
-		position: relative;
-		width:30%;
-		margin: 1.6%;
-		float: left;
-		z-index: 1;
-	}
-	.avg1{
-		position: relative;
-		width:90%;
-		margin: 5%;
-		float: left;
-		z-index: 1;
-	}
+.avg3 {
+  position: relative;
+  width: 30%;
+  margin: 1.6%;
+  float: left;
+  z-index: 1;
+}
+.avg1 {
+  position: relative;
+  width: 90%;
+  margin: 5%;
+  float: left;
+  z-index: 1;
+}
+.buttonTransform {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 80px;
+}
