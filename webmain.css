@@ -117,7 +117,7 @@ section .inner:active {
   height: 25%;
   position: relative;
   float: top;
-  top: 70%;
+  bottom: -100%;
 }
 #post2 {
   transition-delay: 1.33s;
